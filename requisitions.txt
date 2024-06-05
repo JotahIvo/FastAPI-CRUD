@@ -1,0 +1,21 @@
+GET: curl -X GET "http://localhost:8000/products/"
+
+POST: curl -X POST "http://localhost:8000/products/" \
+     -H "Content-Type: application/json" \
+     -d '{
+           "name": "Pepsi",
+           "price": 6.99,
+           "amount": 8,
+           "description": "Pior do que Coca"
+         }'
+
+PUT: curl -X PUT "http://localhost:8000/products/2/" \
+     -H "Content-Type: application/json" \
+     -d '{
+           "name": "Pepsi",
+           "price": 7.99,
+           "amount": 8,
+           "description": "Pior do que Coca"
+         }'
+
+DELETE: curl -X DELETE "http://localhost:8000/products/2/"
